@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "580a6ba7-f1ef-4238-8cf4-b59c748117fe",
+		"name": "AccountingService.Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38824813"
+	},
+	"item": [
+		{
+			"name": "cuentas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "/cuentas/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/cuentas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cuentas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/cuentas/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/cuentas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cuentas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/cuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cuentas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/cuentas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": 1,\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<integer>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cuentas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": 1,\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/cuentas",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": 0,\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<integer>\",\n  \"movimientos\": [\n    {\n      \"movimientoId\": \"<integer>\",\n      \"fecha\": \"<dateTime>\",\n      \"tipoMovimiento\": 1,\n      \"valor\": \"<double>\",\n      \"saldo\": \"<double>\",\n      \"numeroCuenta\": \"<string>\"\n    },\n    {\n      \"movimientoId\": \"<integer>\",\n      \"fecha\": \"<dateTime>\",\n      \"tipoMovimiento\": 1,\n      \"valor\": \"<double>\",\n      \"saldo\": \"<double>\",\n      \"numeroCuenta\": \"<string>\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cuentas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": 0,\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<integer>\",\n  \"movimientos\": [\n    {\n      \"movimientoId\": \"<integer>\",\n      \"fecha\": \"<dateTime>\",\n      \"tipoMovimiento\": 1,\n      \"valor\": \"<double>\",\n      \"saldo\": \"<double>\",\n      \"numeroCuenta\": \"<string>\"\n    },\n    {\n      \"movimientoId\": \"<integer>\",\n      \"fecha\": \"<dateTime>\",\n      \"tipoMovimiento\": 1,\n      \"valor\": \"<double>\",\n      \"saldo\": \"<double>\",\n      \"numeroCuenta\": \"<string>\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "movimientos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "/movimientos/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movimientos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movimientos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/movimientos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"movimientos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/movimientos/:id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movimientos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movimientos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<integer>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/movimientos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"movimientos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/movimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/movimientos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/movimientos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"movimientoId\": \"<integer>\",\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": 1,\n  \"valor\": \"<double>\",\n  \"numeroCuenta\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/movimientos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"movimientoId\": \"<integer>\",\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": 1,\n  \"valor\": \"<double>\",\n  \"numeroCuenta\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/movimientos",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"movimientoId\": \"<integer>\",\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": 1,\n  \"valor\": \"<double>\",\n  \"saldo\": \"<double>\",\n  \"numeroCuenta\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/movimientos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"movimientoId\": \"<integer>\",\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": 1,\n  \"valor\": \"<double>\",\n  \"saldo\": \"<double>\",\n  \"numeroCuenta\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "reportes",
+			"item": [
+				{
+					"name": "/reportes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/reportes?fechaInicio=<dateTime>&fechaFin=<dateTime>&clienteId=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "fechaInicio",
+									"value": "<dateTime>"
+								},
+								{
+									"key": "fechaFin",
+									"value": "<dateTime>"
+								},
+								{
+									"key": "clienteId",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/reportes?fechaInicio=<dateTime>&fechaFin=<dateTime>&clienteId=<integer>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reportes"
+									],
+									"query": [
+										{
+											"key": "fechaInicio",
+											"value": "<dateTime>"
+										},
+										{
+											"key": "fechaFin",
+											"value": "<dateTime>"
+										},
+										{
+											"key": "clienteId",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
