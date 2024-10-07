@@ -1,6 +1,7 @@
 ﻿using AccountingService.Core.DTOs;
 using AccountingService.Core.Models;
 using AccountingService.Core.Repositories;
+using AccountingService.Core.Exceptions;
 
 namespace AccountingService.Core.Services
 {
@@ -43,7 +44,7 @@ namespace AccountingService.Core.Services
                 decimal nuevoSaldo = cuenta.SaldoInicial + movimiento.Valor;
                 if (nuevoSaldo < 0)
                 {
-                    throw new InvalidOperationException("Saldo no disponible");
+                    throw new FailedOperationException("Saldo no disponible");
                 }
                 cuenta.SaldoInicial = nuevoSaldo;
                 Movimiento movimientoFinal= new Movimiento
